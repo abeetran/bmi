@@ -1,0 +1,32 @@
+.cd-main-content .content-wrapper {
+    padding: 5px;
+    margin-top: 50px;
+    color: #212121;
+    background-color: #ffffff;
+    min-height: 520px;
+}
+.cd-main-content::before {
+  /* never visible - used to check MQ in jQuery */
+  display: none;
+  content: 'mobile';
+}
+@media only screen and (min-width: 768px) {
+  .cd-main-content .content-wrapper {
+    margin-left: 110px;
+    padding-top: 55px;
+      margin-top: 0;
+    min-height: 600px;
+  }
+  .cd-main-content::before {
+    content: 'tablet';
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-main-content .content-wrapper {
+    margin-left: 200px;
+      margin-top: 0;
+  }
+  .cd-main-content::before {
+    content: 'desktop';
+  }
+}

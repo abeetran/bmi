@@ -1,0 +1,21 @@
+1. Create empty database
+2. Config database: application/config/database.php
+3. run: domain/cms/migrate
+4. run: domain/cms
+	email: abeetran@gmail.com
+	pass: 1234567
+
+	(sha1 encrypt password read more application/models/User_m.php)
+====/=======
+
+migration path: application/migrations
+config migration path: application/config/migration.php
+
+
+config:
+	default: application/config/config.php
+	myconfig: application/config/obivalue.php
+
+helper: application/helper/obi_helper.php
+
+loader config and helper: application/config/autoload.php
